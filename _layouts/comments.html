@@ -1,0 +1,46 @@
+---
+layout: description
+title: Comments
+pagetype: commments
+---
+<!-- This loops through the paginated posts -->
+
+
+{% if site.total_posts == 0 %}
+    <p>No posts right now.</p>
+{% else %}
+
+
+{% for tag in site.categories %}
+<ul class="blog-list">
+{% if tag[0] == "comments" %}
+  {% for post in tag[1] %}
+    {% if post.title != null %}
+    <li>
+        <a class="blog-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="date">{{ post.date | date_to_string }}</span>
+        <div class="excerpt">{{ post.excerpt }}</div>
+    </li>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+</ul>
+{% endfor %}
+
+{% endif %}
+
+<hr>
+{% if site.total_pages > 1 %}
+<ul>
+
+    {% if site.previous_page %}
+        <li>
+            <a href="{{ site.previous_page_path | prepend: site.baseurl }}">Newer</a>
+        </li>
+    {% endif %}
+    {% if site.next_page %}
+        <li>
+            <a href="{{ site.next_page_path | prepend: site.baseurl }}">Older</a>
+        </li>
+    {% endif %}
+</ul>
+{% endif %}
