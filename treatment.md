@@ -1,7 +1,7 @@
 ---
 title: 潘一铭 | 凭吊
 layout: description
-permalink: /memorial
+permalink: /treatment
 ---
 
 这里谈一下治疗建议, 目的是我无法自己做医疗决定的时候可以让我指定的人帮我做决定. 
