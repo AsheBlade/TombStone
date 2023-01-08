@@ -5,6 +5,8 @@ pagetype: blog
 ---
 <!-- This loops through the paginated posts -->
 
+
+
         
 {% if site.total_posts == 0 %}
     <p>No posts right now.</p>
@@ -18,6 +20,9 @@ pagetype: blog
     {% endfor %}
 </ul>
 </div>
+
+没有什么太值得一提的作品. 放在这里是自己这些年写的一些其他人可能有用的东西. 孙子兵法的注释没有找到很好的译本, 自己尝试写了一些. 薄伽梵歌和相应的梵语研究在中文社区是很少的. 放在这里也许有些人能通过谷歌搜到. 
+
 <ul class="blog-list">
     {% for post in site.posts %}
         <li>
@@ -27,6 +32,8 @@ pagetype: blog
     {% endfor %}
 </ul>
 {% endif %}
+
+
 
 <hr>
 {% if site.total_pages > 1 %}
