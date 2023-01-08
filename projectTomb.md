@@ -4,7 +4,7 @@ layout: description
 permalink: /projectTomb
 ---
 
-## What Project Tombstone? 
+## What is Project Tombstone? 
 
 
 > 对死亡的认真准备是对生命价值的最大尊重. 
