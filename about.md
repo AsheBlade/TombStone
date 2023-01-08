@@ -4,6 +4,10 @@ layout: description
 permalink: /about/
 ---
 
+<br>
+
+<iframe src="https://drive.google.com/file/d/1iKC8HojDOf3x7-_rvA4uaFQrlp5ixS6I/preview" width="640" height="480" allow="autoplay"></iframe>
+
 
 17岁之前在中国, 17岁之后在美国. 
 
@@ -14,7 +18,7 @@ permalink: /about/
 > Everything begins with choice. 
 > No. Wrong. Choice is an illusion, created between those with power, and those without. 
 
-更可悲的是我28岁之后猛然发现自己除了赚钱什么都不会了, 并且赚钱的技能也是一个随时可能会被时代和自卑所抛弃的技能.  所谓的5位数月薪根本无法给我带来任何实际的价值. 
+更可悲的是我28岁之后猛然发现自己除了赚钱什么都不会了, 并且赚钱的技能也是一个随时可能会被时代和资本所抛弃的技能.  除了能让我提前退休之外, 所谓的5位数月薪根本无法给我带来任何实际的价值. 
 
 我学了一身独善其身的本领, 但可悲的无法获取任何实质性的社会地位和周围人的认可. 我几乎没有任何社会资源, 所能提供的只不过是内推机会而已. 
 
