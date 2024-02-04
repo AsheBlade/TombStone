@@ -1,0 +1,59 @@
+---
+layout: description
+title: Blog
+pagetype: blog
+---
+<!-- This loops through the paginated posts -->
+
+
+
+        
+{% if site.total_posts == 0 %}
+    <p>No posts right now.</p>
+{% else %}
+<div class="blogPage-categoryList">
+    <ul>
+    <li><a href="{{ "/categories/" | relative_url }}">Categories</a> : </li>
+    {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <li><a href="{{"/categories/#" | append: category_name | relative_url}}">{{category_name}}</a></li>
+    {% endfor %}
+</ul>
+</div>
+
+我没有什么太值得一提的作品. 自己平时用的blog在<a href="https://asheblade.github.io/Jericho/">这里</a>放在这里是自己这些年写的一些其他人可能有用的东西.别人做过的工作就不放了, 只放互联网上没有的东西. 
+<ul>
+    <li>孙子兵法的注释没有找到很好的译本, 自己尝试写了一些. 目前这个工作还没有做完.</li>
+    <li>薄伽梵歌和相应的梵语研究在简体中文平台没有找到. 自己有一些研究, 放在这里也许有人可以用到.</li>
+    <li>明治天皇的即位诏书没有找到任何中文和英文的翻译. 自己做了对照翻译.</li>
+</ul>  
+ 
+
+<ul class="blog-list">
+    {% for post in site.posts %}
+        <li>
+            <a class="blog-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="date">{{ post.date | date_to_string }}</span>
+            <div class="excerpt">{{ post.excerpt }}</div>
+        </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+
+<hr>
+{% if site.total_pages > 1 %}
+<ul>
+
+    {% if site.previous_page %}
+        <li>
+            <a href="{{ site.previous_page_path | prepend: site.baseurl }}">Newer</a>
+        </li>
+    {% endif %}
+    {% if site.next_page %}
+        <li>
+            <a href="{{ site.next_page_path | prepend: site.baseurl }}">Older</a>
+        </li>
+    {% endif %}
+</ul>
+{% endif %}
