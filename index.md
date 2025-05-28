@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text:    1993-2023
+home_text:    1898-2025
 title: 徐涵秋
 ---
